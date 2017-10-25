@@ -21,6 +21,8 @@ int main()
   c.install();
   std::cout << cppgettext("hello original") << std::endl;
   std::cout << _("hello original") << std::endl;
+  std::cout << "std::string - " << cppgettext(std::string("hello original")) << std::endl;
+  std::cout << "std::string - " << _(std::string("hello original")) << std::endl;
 
   return 0;
 }
