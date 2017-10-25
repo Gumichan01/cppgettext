@@ -20,6 +20,11 @@ char *cppgettext(const char *msgid)
   return (char *)msgid;
 }
 
+std::string cppgettext(const std::string& msgid)
+{
+  return std::string(g_installed_translations->gettext(msgid.c_str()));
+}
+
 //######################################################################
 //######################################################################
 

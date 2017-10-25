@@ -7,6 +7,7 @@
 #define __CPPGETTEXT_H
 
 #include <deque>
+#include <string>
 
 #include "moparser.h"
 
@@ -14,6 +15,7 @@
 //##########################################################################
 
 char *cppgettext(const char *msgid);
+std::string cppgettext(const std::string& msgid);
 
 //##########################################################################
 //##########################################################################
